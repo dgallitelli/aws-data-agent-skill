@@ -1,4 +1,4 @@
-# Data Agent Skill
+# AWS Data Agent Skill
 
 <p align="center">
   <img src="logo.svg" alt="Data Agent" width="128" height="128"/>
