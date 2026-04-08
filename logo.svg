@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <!-- Background circle -->
+  <circle cx="64" cy="64" r="60" fill="#0F1B2D"/>
+  
+  <!-- Outer ring - data orbit -->
+  <ellipse cx="64" cy="64" rx="44" ry="44" fill="none" stroke="#232F3E" stroke-width="2"/>
+  
+  <!-- Data nodes on orbit -->
+  <circle cx="64" cy="20" r="5" fill="#527FFF"/>
+  <circle cx="102" cy="46" r="5" fill="#527FFF"/>
+  <circle cx="102" cy="82" r="5" fill="#527FFF"/>
+  <circle cx="64" cy="108" r="5" fill="#527FFF"/>
+  <circle cx="26" cy="82" r="5" fill="#527FFF"/>
+  <circle cx="26" cy="46" r="5" fill="#527FFF"/>
+  
+  <!-- Connection lines from nodes to center -->
+  <line x1="64" y1="20" x2="64" y2="50" stroke="#527FFF" stroke-width="1.5" opacity="0.4"/>
+  <line x1="102" y1="46" x2="76" y2="56" stroke="#527FFF" stroke-width="1.5" opacity="0.4"/>
+  <line x1="102" y1="82" x2="76" y2="72" stroke="#527FFF" stroke-width="1.5" opacity="0.4"/>
+  <line x1="64" y1="108" x2="64" y2="78" stroke="#527FFF" stroke-width="1.5" opacity="0.4"/>
+  <line x1="26" y1="82" x2="52" y2="72" stroke="#527FFF" stroke-width="1.5" opacity="0.4"/>
+  <line x1="26" y1="46" x2="52" y2="56" stroke="#527FFF" stroke-width="1.5" opacity="0.4"/>
+  
+  <!-- Central agent - magnifying glass + spark -->
+  <!-- Magnifying glass body -->
+  <circle cx="58" cy="58" r="14" fill="none" stroke="#FF9900" stroke-width="3"/>
+  <!-- Magnifying glass handle -->
+  <line x1="68" y1="68" x2="80" y2="80" stroke="#FF9900" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Spark / AI indicator inside lens -->
+  <path d="M58 48 L56 55 L50 55 L55 59 L53 66 L58 62 L63 66 L61 59 L66 55 L60 55 Z" 
+        fill="#FF9900" opacity="0.9"/>
+  
+  <!-- Small data table icon bottom-left of lens -->
+  <rect x="36" y="74" width="16" height="12" rx="2" fill="none" stroke="#527FFF" stroke-width="1.5"/>
+  <line x1="36" y1="78" x2="52" y2="78" stroke="#527FFF" stroke-width="1"/>
+  <line x1="36" y1="82" x2="52" y2="82" stroke="#527FFF" stroke-width="1"/>
+  <line x1="44" y1="74" x2="44" y2="86" stroke="#527FFF" stroke-width="1"/>
+  
+  <!-- Small query/terminal icon top-right -->
+  <rect x="78" y="34" width="16" height="12" rx="2" fill="none" stroke="#527FFF" stroke-width="1.5"/>
+  <text x="81" y="43" font-family="monospace" font-size="8" fill="#527FFF">&gt;_</text>
+</svg>

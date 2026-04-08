@@ -1,0 +1,42 @@
+{
+  // ──────────────────────────────────────────────────────────────────────
+  // Option A (default): awslabs AWS API MCP Server — open-source, local
+  // Runs locally via uvx. Provides call_aws and suggest_aws_commands tools.
+  // Docs: https://github.com/awslabs/mcp/tree/main/src/aws-api-mcp-server
+  // ──────────────────────────────────────────────────────────────────────
+  "mcpServers": {
+    "awslabs.aws-api-mcp-server": {
+      "command": "uvx",
+      "args": [
+        "awslabs.aws-api-mcp-server@latest"
+      ],
+      "env": {
+        "AWS_REGION": "us-east-1",
+        "FASTMCP_LOG_LEVEL": "ERROR"
+      },
+      "autoApprove": [],
+      "disabled": false
+    }
+
+    // ──────────────────────────────────────────────────────────────────
+    // Option B (alternative): AWS MCP Server (Preview) — managed, remote
+    // A fully managed remote MCP server that consolidates AWS API MCP and
+    // AWS Knowledge MCP into a single endpoint. Includes Agent SOPs,
+    // documentation search, and API execution. Requires mcp-proxy-for-aws
+    // for SigV4 auth. If you enable this, disable Option A above to avoid
+    // tool conflicts.
+    // Docs: https://docs.aws.amazon.com/aws-mcp/latest/userguide/what-is-mcp-server.html
+    // ──────────────────────────────────────────────────────────────────
+    // "aws-mcp": {
+    //   "command": "uvx",
+    //   "timeout": 100000,
+    //   "args": [
+    //     "mcp-proxy-for-aws@latest",
+    //     "https://aws-mcp.us-east-1.api.aws/mcp",
+    //     "--metadata", "AWS_REGION=us-east-1"
+    //   ],
+    //   "autoApprove": [],
+    //   "disabled": false
+    // }
+  }
+}
